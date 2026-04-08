@@ -104,7 +104,7 @@
     <!-- Mobile Header -->
     <header class="lg:hidden bg-blue-energy text-white p-4 flex justify-between items-center sticky top-0 z-50 shadow-md">
         <div class="flex items-center gap-3">
-            <img src="Perth%20IVECO_Stacked%20-%20Reverse%20Dark.png" alt="Logo" class="h-8 w-auto" onerror="this.style.display='none'">
+            <img src="Perth IVECO_Stacked - Reverse Dark.png" alt="Logo" class="h-8 w-auto" onerror="this.style.display='none'">
             <span class="font-bold text-xs uppercase tracking-wider">Listing Playbook</span>
         </div>
         <button id="mobileMenuBtn" class="p-2">
@@ -116,7 +116,7 @@
         <!-- Sidebar Navigation -->
         <aside id="sidebar" class="fixed inset-y-0 left-0 z-40 w-60 bg-blue-energy text-slate-100 transform -translate-x-full lg:translate-x-0 transition-transform duration-200 ease-in-out flex flex-col no-print shadow-xl">
             <div class="p-6 border-b border-white/10">
-                <img src="Perth%20IVECO_Stacked%20-%20Reverse%20Dark.png" alt="Perth IVECO" class="w-full h-auto mb-4" onerror="this.style.display='none'">
+                <img src="Perth IVECO_Stacked - Reverse Dark.png" alt="Perth IVECO" class="w-full h-auto mb-4" onerror="this.style.display='none'">
                 <h1 class="text-[10px] font-bold text-white/60 uppercase tracking-[0.2em] leading-none text-wrap">Sales Listing Playbook</h1>
             </div>
 
@@ -164,7 +164,7 @@
             </nav>
 
             <div class="p-6 border-t border-white/10">
-                <a href="https://github.com/perth-iveco-sales-listing-playbook" target="_blank" class="flex items-center gap-2 text-[8px] text-white/40 hover:text-white transition-colors uppercase tracking-[0.2em] font-black">
+                <a href="https://github.com/clint-p-iveco/perth-iveco-sales-listing-playbook" target="_blank" class="flex items-center gap-2 text-[8px] text-white/40 hover:text-white transition-colors uppercase tracking-[0.2em] font-black">
                     <i data-lucide="github" class="w-3 h-3"></i> View Repository
                 </a>
             </div>
@@ -185,10 +185,10 @@
                     <div class="max-w-5xl mx-auto">
                         <div class="flex items-end justify-between mb-10 border-b border-slate-100 pb-6">
                             <div>
-                                <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight uppercase">Perth IVECO Sales Listing Playbook</h1>
-                                <p class="text-slate-500 text-base font-medium">Dealership Performance & Asset Standards</p>
+                                <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight uppercase">Sales Listing Standards</h1>
+                                <p class="text-slate-500 text-base font-medium">Perth IVECO Performance & Asset Hub</p>
                             </div>
-                            <img src="Perth%20IVECO_Stacked%20-%20Reverse%20Dark.png" alt="Logo" class="hidden md:block h-10 w-auto grayscale opacity-10" onerror="this.style.display='none'">
+                            <img src="Perth IVECO_Stacked - Reverse Dark.png" alt="Logo" class="hidden md:block h-10 w-auto grayscale opacity-10" onerror="this.style.display='none'">
                         </div>
                         
                         <div class="grid md:grid-cols-3 gap-6 mb-12">
@@ -425,8 +425,8 @@ Contact [Name] on [Phone] to arrange an inspection.</pre>
                                 <h3 class="font-bold text-blue-energy mb-8 uppercase text-[10px] tracking-widest flex items-center gap-2">
                                     <i data-lucide="check-circle" class="w-4 h-4"></i> Elite Standard
                                 </h3>
-                                <div class="aspect-video w-full bg-blue-energy rounded-md border border-white/10 mb-8 overflow-hidden relative">
-                                    <img src="08%20Front%20Right%2045.png" class="w-full h-full object-cover opacity-60" onerror="this.style.display='none'">
+                                <div class="aspect-video w-full bg-blue-energy rounded-md border border-white/10 mb-8 overflow-hidden relative shadow-2xl">
+                                    <img src="08 Front Right 45.png" class="w-full h-full object-cover opacity-60" onerror="this.style.display='none'">
                                     <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-[9px] uppercase tracking-[0.4em]">Landscape</div>
                                 </div>
                                 <ul class="text-xs space-y-4 text-slate-800 font-bold uppercase tracking-wider">
@@ -514,7 +514,7 @@ Contact [Name] on [Phone] to arrange an inspection.</pre>
     </div>
 
     <script>
-        const ePath = (name) => encodeURIComponent(name);
+        const ePath = (name) => encodeURI(name);
 
         const vehicleAngles = [
             { id: "01", name: "Front", file: "01 Front.png" },
@@ -628,7 +628,7 @@ Contact [Name] on [Phone] to arrange an inspection.</pre>
                     card.className = "angle-card p-3";
                     card.innerHTML = `
                         <div class="aspect-video bg-slate-50 rounded overflow-hidden mb-3">
-                            <img src="${ePath(angle.file)}" alt="${angle.name}" class="w-full h-full object-contain p-1" onerror="this.src='https://placehold.co/300x200?text=${angle.id}'">
+                            <img src="${ePath(angle.file)}" alt="${angle.name}" class="w-full h-full object-contain p-1" onerror="this.style.display='none'">
                         </div>
                         <div class="text-[8px] font-bold text-slate-400 uppercase text-center tracking-[0.2em]">${angle.name}</div>
                     `;
